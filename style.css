@@ -1,0 +1,27 @@
+body {
+ 
+    background-image:url("https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2019/04/25/7a68324a-60d2-11e9-b745-17e2afcf325c_image_hires_113502.JPG?itok=jyCfqM1S&v=1556163308");
+    
+}
+
+#canvas_is_mine {
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge; 
+} 
+
+h2 { 
+   background: #337ab7; 
+   color: white; 
+   border-radius: 10px; 
+   width: 200px; 
+   padding: 5px; 
+} 
+
+h3 {
+    display: inline-block;
+}
+    
+span { 
+   font-size: 22px; 
+   color: white; }
