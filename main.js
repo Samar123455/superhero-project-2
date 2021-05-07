@@ -72,3 +72,63 @@ function My_Keydown(e){
         new_image("captain_america_left_hand (1).png");
         console.log("h");
     }
+
+    if(Keypressed == '38'){
+        up();
+        console.log("up");
+    }
+
+    if(KeyPressed == '40'){
+        down();
+        console.log("down");
+    }
+
+    if(KeyPressed == '37'){
+        left();
+        console.log("left");
+    }
+
+    if(KeyPressed == '39'){
+         right();
+         console.log("right");   
+    }
+
+    function up(){
+        if(player_y >= 0){
+            player_y = player_y - block_image_height;
+            console.log("block image hieght =" + block_image_height);
+            console.log("when up arrow key is pressed, X"+ Player_x + ",Y" + player_y );
+            canvas.remove("player_object");
+            player_update();
+        }
+    }
+
+    function down(){
+        if(player_y <= 500){
+            player_y = player_y + block_image_height;
+            console.log("block image hieght" + block_image_height);
+            console.log("wher down arrow key is pressed,X" + Player_x  + ",Y" + player_y);
+            canvas.remove("player_object");
+            player_update();
+        }
+    }
+
+    function left(){
+        if(player_x >= 0){
+            player_x = player_x - block_image_height;
+            console.log("block image height" + block_image_height);
+            console.log("when left arrow key is pressed,X" + player_x + ",Y" + player_y );
+            canvas.remove("player_object");
+            player_update();
+        }
+    }
+
+    function right(){
+        if(player_x <= 850){
+            player_x = player_x = block_image_height;
+            console.log("block image height" + block_image_height);
+            console.log("when right arrow key is pressed,X" + player_x + ",Y" + player_y);
+            canvas.remove("player_object");
+            player_update();
+        }
+    }
